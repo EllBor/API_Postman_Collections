@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "0671ff29-cecf-4ee3-94e9-71e60867d274",
+		"name": "Backend Part3. Телеграм-бот",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33548084"
+	},
+	"item": [
+		{
+			"name": "Получи информацию о боте (метод getMe)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://api.telegram.org/bot{{TELEGRAM_BOT_TOKEN}}/getMe"
+			},
+			"response": []
+		},
+		{
+			"name": "Информация о себе в ответе на метод getUpdates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://api.telegram.org/bot{{TELEGRAM_BOT_TOKEN}}/getUpdates"
+			},
+			"response": []
+		},
+		{
+			"name": "Отправь себе сообщение от имени бота (sendMessage)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "text",
+							"value": "Hello, gojirift",
+							"type": "text"
+						},
+						{
+							"key": "chat_id",
+							"value": "910740861",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://api.telegram.org/bot{{TELEGRAM_BOT_TOKEN}}/sendMessage"
+			},
+			"response": []
+		},
+		{
+			"name": "Отправить фотографию себе от имени бота",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "chat_id",
+							"value": "910740861",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "/C:/Users/Елизавета/Downloads/gojirift.jpg"
+						}
+					]
+				},
+				"url": "https://api.telegram.org/bot{{TELEGRAM_BOT_TOKEN}}/sendPhoto"
+			},
+			"response": []
+		},
+		{
+			"name": "Отправить pdf-файл себе от имени бота",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "chat_id",
+							"value": "910740861",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "/C:/Users/Елизавета/Downloads/gojirift.pdf"
+						}
+					]
+				},
+				"url": "https://api.telegram.org/bot{{TELEGRAM_BOT_TOKEN}}/sendPhoto"
+			},
+			"response": []
+		},
+		{
+			"name": "Отправить docx-файл себе от имени бота",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "chat_id",
+							"value": "910740861",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "/C:/Users/Елизавета/Downloads/gojirift.docx"
+						}
+					]
+				},
+				"url": "https://api.telegram.org/bot{{TELEGRAM_BOT_TOKEN}}/sendPhoto"
+			},
+			"response": []
+		},
+		{
+			"name": "Получить фотографии -  getUserProfilePhotos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "910740861",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://api.telegram.org/bot{{TELEGRAM_BOT_TOKEN}}/getUserProfilePhotos"
+			},
+			"response": []
+		}
+	]
+}

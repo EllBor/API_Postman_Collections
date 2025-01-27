@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "98b36eb7-2ea3-42f3-8c2a-6a1e0ed6ce48",
+		"name": "Backend Part2. Инструменты разработчика",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33548084"
+	},
+	"item": [
+		{
+			"name": "Получение контактов",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://hh.ru/vacancy/91773507/contacts?employerId=3034828",
+					"protocol": "https",
+					"host": [
+						"hh",
+						"ru"
+					],
+					"path": [
+						"vacancy",
+						"91773507",
+						"contacts"
+					],
+					"query": [
+						{
+							"key": "employerId",
+							"value": "3034828"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Поиск по вакансиям",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://hh.ru/vacancysuggest/?q=java",
+					"protocol": "https",
+					"host": [
+						"hh",
+						"ru"
+					],
+					"path": [
+						"vacancysuggest",
+						""
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "java"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
